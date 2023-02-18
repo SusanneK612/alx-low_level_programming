@@ -3,25 +3,28 @@
 #include <time.h>
 
 /**
-*main - Entry
- * Return: Always 0
+ * main - prints the last digit of the number stored in the variable n.
+ * Return: Always 0(Success)
  */
 int main(void)
 {
 	int n;
-	int a;
+	int x;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	a = n % 10;
-
-	if (a > 5)
-
-printf("Last digit of %d is %d and is greater than 5\n", n, a);
-	if (a == 0)
-printf("Last digit of %d is %d and is 0\n", n, a);
-	if(a < 6 && a | n = 0)
-printf("Last digit of %d is %d and is less than 6 and not 0\n, n, a);
-
+	x = n % 10;
+	if (x > 5)
+	{
+		printf("Last digit of %d and is greater than 5\n", n, x);
+	}
+	else if (x == 0)
+	{
+		printf("Last digit of %d is %d and is 0\n", n, x);
+	}
+	else
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, x);
+	}
 	return (0);
 }
