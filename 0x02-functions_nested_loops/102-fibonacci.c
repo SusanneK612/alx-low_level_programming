@@ -6,6 +6,7 @@
  */
 
 int main(void)
+
 {
 	int i = 0;
 	long j = 1, k = 2;
@@ -22,7 +23,7 @@ int main(void)
 	j = k - j;
 	printf(", %ld", k)
 	}
-	++1;
+	++i;
 	}
 	printf("\n");
 	return (0);
